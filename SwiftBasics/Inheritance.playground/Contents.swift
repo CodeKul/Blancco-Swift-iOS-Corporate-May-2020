@@ -11,6 +11,10 @@ class Employee {
         self.salary = salary
     }
     
+    func increament() {
+        self.salary += 100
+    }
+
     func info() {
         print("Name: \(name)")
         print("Id: \(id)")
@@ -28,7 +32,7 @@ class Developer: Employee {
         super.init(name: name, id: id, salary: salary)
     }
     
-    func increament() {
+    override func increament() {
         self.salary += 1000
     }
     
@@ -69,7 +73,8 @@ class Manager: Developer {
     }
     
     override func increament() {
-        self.salary += 3000
+        super.increament()
+//        self.salary += 3000
     }
     
     override func info() {
