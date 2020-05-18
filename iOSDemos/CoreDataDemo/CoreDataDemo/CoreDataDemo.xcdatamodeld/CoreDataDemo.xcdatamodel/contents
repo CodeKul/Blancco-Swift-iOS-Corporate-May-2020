@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19A602" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Student" representedClassName="Student" syncable="YES" codeGenerationType="class">
+        <attribute name="marks" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="rno" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <fetchRequest name="FetchRoll1" entity="Student" predicateString="rno == 1"/>
+    <fetchRequest name="FetchStudents" entity="Student" predicateString="rno == 0"/>
+    <elements>
+        <element name="Student" positionX="3248.55078125" positionY="-4188.1953125" width="128" height="88"/>
+    </elements>
+</model>
